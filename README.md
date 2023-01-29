@@ -31,3 +31,25 @@ Di dalam class Transaction terdapat beberapa fungsi yang dapat menjalankan tugas
 8. Fungsi ```ttl_price()``` menghitung total harga dari seluruh item yang terdaftar dalam pesanan.
 
 ## Test Case
+1. Customer ingin menambahkan dua item baru menggunakan method add_item () Item yang ditambahkan adalah sebagai berikut:
+- Nama Item: Ayam Goreng, Qty: 2, Harga: 20000 
+- Nama Item: Pasta Gigi, Qty: 3, Harga: 15000
+Output :
+![image](https://user-images.githubusercontent.com/79633073/215320302-c5697ef4-6ed7-47f6-9349-72df0e4c86bf.png)
+
+2. Ternyata Customer salah membeli salah satu item dari belanjaan yang sudah ditambahkan, maka Customer menggunakan method delete_item () untuk menghapus item. Item yang ingin dihapuskan adalah Pasta Gigi.
+Output:
+![image](https://user-images.githubusercontent.com/79633073/215320381-a7a20d65-5e7a-4044-a0c5-24c398ac1d8b.png)
+
+3. Ternyata setelah dipikir - pikir Customer salah memasukkan item yang ingin dibelanjakan! Daripada menghapusnya satu-satu, maka Customer cukup menggunakan method reset_transaction () untuk menghapus semua item yang sudah ditambahkan.
+Output:
+![image](https://user-images.githubusercontent.com/79633073/215320881-522e62e9-b7cf-437f-8b4a-359161bed00e.png)
+
+4. Setelah Customer selesai berbelanja, akan menghitung total belanja yang harus dibayarkan menggunakan method total_price (). Sebelum mengeluarkan output total belanja akan menampilkan item - item yang dibeli
+ Output:
+ ![image](https://user-images.githubusercontent.com/79633073/215320983-edd2cbf6-ce24-4ce2-b057-f0ffc7c47258.png)
+
+## Future Work
+1. Membuat sistem kasir ini terkoneksi DB dan Internet
+2. Menambahkan jasa pengiriman
+3. Membuat promo kode referal
